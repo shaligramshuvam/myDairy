@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css"><!--MY CSS-->
+    <link rel="icon" href="/image/myDiary-logo.jpg"><!--TITLE ICON LINK-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!--FONTAWESOME LINK-->
+
+    <!--TEMPLATE CSS-->
+    <title>myDiary-Profile</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card__item" aria-labelledby="article-title">
+            <article class="card__item__article">
+                <h2 id="article-title" class="card__item__article-title ">Profile</h2>
+                <div class="container">
+
+                    <div class="profile-pic">
+                        <label class="-label" for="file">
+                            <span class="glyphicon glyphicon-camera"></span>
+                            <!-- <span>Change Image</span> -->
+                        </label>
+                        <input id="file" type="file" onchange="loadFile(event)" />
+                        <img src="/image/nature.jpg" id="output"
+                            width="200" />
+                    </div>
+                    <div class="profileUsername">
+                        <label for="">Username: </label>
+                        <label for=""> Shuvam Kunwer</label>
+                    </div>
+                    <div class="profileEmail">
+                        <label for="">Diary-name: </label>
+                        <label for="">myStory</label>
+                    </div> <br>
+                    <div class="profileBtn">
+                        <a href="./updateProfile/updateProfile.html" target="_self"><button type="button">
+                            <!-- <i class="fas fa-edit"></i> -->
+                            Edit
+                          </button></a>
+                    </div>
+
+                </div>
+                <div class="card__item__article-shape">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </div>
+            </article>
+            <figure class="card__item-cover">
+                <img src='/image/nature.jpg' alt=''>
+                <figcapture>
+                    Profile
+                </figcapture>
+            </figure>
+        </div>
+    </div>
+</body>
+<!--TEMPLATE JS-->
+<script src="profile.js"></script>
+
+</html>
